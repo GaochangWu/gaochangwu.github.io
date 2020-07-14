@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LapEPI's Project Page</title>
+<!-- Bootstrap -->
+<link href="./css/bootstrap-4.0.0.css" rel="stylesheet">
+</head>
+<body>
+<div id="page_container">
+<header>
+  <div class="jumbotron" >
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h5 class="text-center">arXiv 2019</h5>
+          <h2 class="text-center">LapEPI-Net: A Laplacian Pyramid EPI Structure for Learning-based Dense Light Field Reconstruction</h1>
+          <p class="text-center">&nbsp;</p>
+          <h6 class="text-center"><a href="https://gaochangwu.github.io/">Gaochang Wu</a><sup>1, 2</sup>, <a href="http://www.liuyebin.com/">Yebin Liu</a><sup>1</sup>, <a href="http://luvision.net/">Lu Fang</a><sup>3</sup>, Tianyou Chai</a><sup>2</sup></h6>
+          <p class="text-center">1. Tsinghua University, 2. Northeastern University, 3. Tsinghua-Berkeley Shenzhen Institute</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <p>&nbsp;</p>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Abstract</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center  offset-xl-0 col-xl-12">
+        <p class="text-left"><em>For dense sampled light field (LF) reconstruction problem, existing approaches focus on a depth-free framework to achieve non-Lambertian performance. However, they trap in the trade-off “either aliasing or blurring” problem, i.e., pre-filtering the aliasing components (caused by the angular sparsity of the input LF) always leads to a blurry result. In this paper, we intend to solve this challenge by introducing an elaborately designed epipolar plane image (EPI) structure within a learning-based framework. Specifically, we start by analytically showing that decreasing the spatial scale of an EPI shows higher efficiency in addressing the aliasing problem than simply adopting pre-filtering. Accordingly, we design a Laplacian Pyramid EPI (LapEPI) structure that contains both low spatial scale EPI (for aliasing) and high-frequency residuals (for blurring) to solve the trade-off problem. We then propose a novel network architecture for the LapEPI structure, termed as LapEPInet. To ensure the non-Lambertian performance, we adopt a transfer-learning strategy by first pre-training the network with natural images then fine-tuning it with unstructured LFs. Extensive experiments demonstrate the high performance and robustness of the proposed approach for tackling the aliasing-or-blurring problem as well as the nonLambertian reconstruction.
+ </em></p>
+        <p class="text-left">&nbsp;</p>
+        <p class="text-left">&nbsp;</p>
+        <img src="assets/net_arch2_1.png" width="600" alt=""/>
+        <p>Fig 1.&nbsp;We introduce a Laplacian Pyramid EPI (LapEPI) structure for solving the aliasing-or-blurring problem.</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Results </h2>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center offset-xl-0 col-xl-10"> <img src="assets/results_large1.png" width="1055" alt=""/>
+        <p>&nbsp;</p>
+        <p class="text-center">Fig 2. Comparison of the results on the light fields from gantry system.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center offset-xl-0 col-xl-10"> <img src="assets/results_large2.png" width="1055" alt=""/>
+        <p>&nbsp;</p>
+        <p class="text-center">Fig 3. Comparison of the results on the LFs from Lytro Illum.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center offset-xl-0 col-xl-10"> <img src="assets/results_large3.png" width="1055" alt=""/>
+        <p>&nbsp;</p>
+        <p class="text-center">Fig 4. Comparison of the results on the microscope light fields.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Technical Paper</h2>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center"> <a href="assets/LapEPI-Net.pdf"><img src="assets/paper.png" width="1000" alt=""/></a>
+      <p>&nbsp;</p>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 mb-4 mt-2 text-center">
+        <h2>Demo Video</h2>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+      <video controls="controls" width="1024" height="576">
+        <source src="./assets/LapEPI_video.mp4" type="video/mp4">
+      </video>
+      <p>&nbsp;</p>
+    </div>
+	<hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Citation</h2>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-left">
+      <p><span style="color:#000000;font-family:'Courier New';font-size:15px;"> Gaochang Wu, Yebin Liu, Lu Fang, Tianyou Chai. "LapEPI-Net: A Laplacian Pyramid EPI structure for Learning-based Dense Light Field Reconstruction". ArXiv:1902.06221 2019</span></p>
+      <p>&nbsp;</p>
+      <p><span style="color:#000000;font-family:'Courier New';font-size:15px;">@misc{wu2019lapepi, <br>
+			title={LapEPI-Net: A Laplacian Pyramid EPI structure for Learning-based Dense Light Field Reconstruction},<br>
+			author={Gaochang Wu and Yebin Liu and Lu Fang and Tianyou Chai},<br>
+			year={2019},<br>
+			eprint={1902.06221},<br>
+			archivePrefix={arXiv},<br>
+			primaryClass={cs.CV}<br>
+		}</span></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="row"> </div>
+  </div>
+  <div class="jumbotron"> </div>
+</section>	
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="./js/jquery-3.2.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="./js/popper.min.js"></script> 
+<script src="./js/bootstrap-4.0.0.js"></script>
+</body>
+</html>
