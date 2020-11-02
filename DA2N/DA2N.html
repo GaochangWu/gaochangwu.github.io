@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SAA-Net's Project Page</title>
+<!-- Bootstrap -->
+<link href="./css/bootstrap-4.0.0.css" rel="stylesheet">
+</head>
+<body>
+<div id="page_container">
+<header>
+  <div class="jumbotron" >
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h5 class="text-left"><a href="https://gaochangwu.github.io/">Back to my homepage</a></h5> <h5 class="text-center">submitted to IEEE TPAMI 2020</h5>
+          <h2 class="text-center">Revisiting Light Field Rendering with Deep Anti-Aliasing Neural Network</h1>
+          <p class="text-center">&nbsp;</p>
+          <h6 class="text-center"><a href="https://gaochangwu.github.io/">Gaochang Wu</a><sup>1</sup>, <a href="http://www.liuyebin.com/">Yebin Liu</a><sup>2</sup>, <a href="http://luvision.net/">Lu Fang</a><sup>3</sup>, Tianyou Chai</a><sup>1</sup></h6>
+          <p class="text-center">1. Northeastern University, 2. Tsinghua University, 3. Tsinghua-Berkeley Shenzhen Institute</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <p>&nbsp;</p>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Abstract</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center  offset-xl-0 col-xl-12">
+        <p class="text-left"><em>The light field (LF) reconstruction is mainly confronted with two challenges, large disparity and non-Lambertian effect. Typical approaches either address the large disparity challenge using depth estimation followed by view synthesis or eschew explicit depth information to enable non-Lambertian rendering, but rarely solve both challenges in a unified framework. In this paper, we revisit the classic LF rendering framework to address both challenges by incorporating it with advanced deep learning techniques. First, we analytically show that the essential issue behind the large disparity and non-Lambertian challenges is the aliasing problem. Classic LF rendering approaches typically mitigate the aliasing with a reconstruction filter in the Fourier domain, which is, however, intractable to implement within a deep learning pipeline. Instead, we introduce an alternative framework to perform anti-aliasing reconstruction in the image domain and prove in theory the comparable and even superior efficacy on the aliasing issue. To explore the full potential, we then embed the anti-aliasing framework into a deep neural network through the design of an integrated architecture and trainable parameters. The network is trained through end-to-end optimization using a peculiar training set, including regular LFs and unstructured LFs. The proposed deep learning pipeline shows a substantial superiority on solving both the large disparity and the non-Lambertian challenges compared with other state-of-the-art approaches. In addition to the view interpolation for a LF, we also show that the proposed pipeline also benefits light field view extrapolation.
+ </em></p>
+        <p class="text-left">&nbsp;</p>
+        <p class="text-left">&nbsp;</p>
+        <img src="assets/teaser.png" width="500" alt=""/>
+        <p>Fig 1.&nbsp;Schematic diagram of the proposed Deep Anti-Aliasing Network (DA<sup>2</sup>N) with embedding shearing, downscaling and prefiltering. In the result, we use input views indicated by the red lines for the EPI reconstruction, including interpolation and extrapolation.</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Network </h2>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center offset-xl-0 col-xl-10"> <img src="assets/CNN.png" width="1055" alt=""/>
+        <p>&nbsp;</p>
+        <p>Fig 2.&nbsp;Architecture of the proposed deep anti-aliasing network (DA<sup>2</sup>N) based on shearing, downscaling and prefiltering.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+	<hr>
+	<div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Results </h2>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center offset-xl-0 col-xl-10"> <img src="assets/results_large2.png" width="1055" alt=""/>
+        <p>&nbsp;</p>
+        <p>Fig 3. Comparison of the results (x16 upsampling) on the LFs from the ICME DSLF dataset.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center offset-xl-0 col-xl-10"> <img src="assets/results_large3.png" width="1055" alt=""/>
+        <p>&nbsp;</p>
+        <p class="text-center">Fig 4. Comparison of the results (16x upsampling) on the light fields from the MPI Light Field Archive.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Technical Paper</h2>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center"> <a href="assets/DA2N.pdf"><img src="assets/paper.png" width="1000" alt=""/></a>
+      <p>&nbsp;</p>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Citation</h2>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-left">
+      <p><span style="color:#000000;font-family:'Courier New';font-size:15px;"> Gaochang Wu, Yebin Liu, Lu Fang, Tianyou Chai. "Revisiting Light Field Rendering with Deep Anti-Aliasing Neural Network". ArXiv:2007.02252 2020</span></p>
+      <p>&nbsp;</p>
+      <p><span style="color:#000000;font-family:'Courier New';font-size:15px;">@misc{wu2019lapepi, <br>
+			title={Revisiting Light Field Rendering with Deep Anti-Aliasing Neural Network},<br>
+			author={Gaochang Wu and Yebin Liu and Lu Fang and Tianyou Chai},<br>
+			year={2020},<br>
+			eprint={2007.02252},<br>
+			archivePrefix={arXiv},<br>
+			primaryClass={cs.CV}<br>
+		}</span></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="row"> </div>
+  </div>
+  <div class="jumbotron"> </div>
+</section>	
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="./js/jquery-3.2.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="./js/popper.min.js"></script> 
+<script src="./js/bootstrap-4.0.0.js"></script>
+</body>
+</html>
