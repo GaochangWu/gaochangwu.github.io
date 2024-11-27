@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head id="lhjicfnbdifhjojdccncinofklkjlpoa"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FmFormer's Project Page</title>
+<!-- Bootstrap -->
+<link href="./css/bootstrap-4.0.0.css" rel="stylesheet">
+<style id="NzQwMDAwMDE5OTk5OTYy"></style><script type="text/javascript" charset="utf-8" defer="" async="" src="chrome-extension://acpjhbjgjlpeanfemfbbkabadjolngdk/inject-scripts/patch-xhr.js" data-params="{}"></script></head>
+<body>
+<div id="page_container">
+<header>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h5 class="text-left"><a href="https://gaochangwu.github.io/">Back to my homepage</a></h5> <h5 class="text-center">IEEE TCSVT 2024</h5>
+          <h2 class="text-center">Cross-Modal Learning for Anomaly Detection in Complex Industrial Process: Methodology and Benchmark</h2>
+          <p class="text-center">&nbsp;</p>
+          <h6 class="text-center"><a href="https://gaochangwu.github.io/">Gaochang Wu</a><sup>1</sup>, Yapeng Zhang<sup>1</sup>, Lan Deng<sup>1</sup>, Jingxin Zhang<sup>2</sup>, Tianyou Chai<sup>1</sup></h6>
+          <p class="text-center">1. Northeastern University, 2. Swinburne University of Technology</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <p>&nbsp;</p>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Abstract</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center  offset-xl-0 col-xl-12">
+        <p class="text-left"><em>Anomaly detection in complex industrial processes plays a pivotal role in ensuring efficient, stable, and secure operation. Existing anomaly detection methods primarily focus on analyzing dominant anomalies using the process variables (such as arc current) or constructing neural networks based on abnormal visual features, while overlooking the intrinsic correlation of cross-modal information. This paper proposes a cross-modal Transformer (dubbed FmFormer), designed to facilitate anomaly detection by exploring the correlation between visual features (video) and process variables (current) in the context of the fused magnesium smelting process. Our approach introduces a novel tokenization paradigm to effectively bridge the substantial dimensionality gap between the 3D video modality and the 1D current modality in a multiscale manner, enabling a hierarchical reconstruction of pixel-level anomaly detection. Subsequently, the FmFormer leverages self-attention to learn internal features within each modality and bidirectional cross-attention to capture correlations across modalities. By decoding the bidirectional correlation features, we obtain the final detection result and even locate the specific anomaly region. To validate the effectiveness of the proposed method, we also present a pioneering cross-modal benchmark of the fused magnesium smelting process, featuring synchronously acquired video and current data for over 2.2 million samples. Leveraging cross-modal learning, the proposed FmFormer achieves state-of-the-art performance in detecting anomalies, particularly under extreme interferences such as current fluctuations and visual occlusion caused by heavy water mist. The presented methodology and benchmark may be applicable to other industrial applications with some amendments.
+ </em></p>
+        <p class="text-left">&nbsp;</p>
+        <p class="text-left">&nbsp;</p>
+		<h5 class="text-center"><a href="https://github.com/GaochangWu/FMF-Benchmark/">[Download Data]</a> <a href="https://github.com/GaochangWu/FMF-Benchmark/">[Code]</a></h5>
+        <img src="./images/FMF.png" width="1055" alt="">
+        <p>Fig 1.&nbsp;Cross-modal information is exploited to \revise{perform anomaly detection in the context of a typical industrial process}, fused magnesium smelting, as illustrated in (a). The picture at the bottom left shows an anomaly region on the furnace shell, whose visual feature is difficult to detect due to interference from heavy water mist. A novel FMF Transformer (FmFormer) is proposed using synchronous acquired video and current data, to explore the internal features of each modality by self-attention and the correlation feature across modalities by cross-attention, as shown in (b).</p>
+        <p>&nbsp;</p>
+	    <img src="./images/Pipeline.png" width="1055" alt="">
+        <p>Fig 2.&nbsp;An overview of the proposed FmFormer for anomaly detection in fused magnesium smelting processes.</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Results </h2>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center offset-xl-0 col-xl-10"> <img src="./images/results_large1.png" width="1055" alt="">
+        <p>&nbsp;</p>
+        <p>Fig 3.&nbsp;Visual comparison of the proposed FmFormer-B (cross-modality) with three state-of-the-art Transformer-based methods for pixel-level anomaly detection on three challenging cases.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Technical Paper</h2>
+      </div>
+    <div id="extwaiokist" style="display:none" v="imcbc" q="ce9c982f" c="1455." i="1463" u="0.041" s="11212420" sg="svr_11212419-ga_11212420-bai_11252408" d="1" w="false" e="" a="2" m="BMe=" vn="3gest"><div id="extwaigglbit" style="display:none" v="imcbc" q="ce9c982f" c="1455." i="1463" u="0.041" s="11212420" sg="svr_11212419-ga_11212420-bai_11252408" d="1" w="false" e="" a="2" m="BMe="></div></div></div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center"> <a href="https://arxiv.org/abs/2406.09016"><img src="./images/paper.png" width="1000" alt=""></a>
+      <p>&nbsp;</p>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
+        <h2>Citation</h2>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-left">
+      <p><span style="color:#000000;font-family:&#39;Courier New&#39;;font-size:15px;"> Gaochang Wu, Yapeng Zhang, Lan Deng, Jingxin Zhang, Tianyou Chai. "Cross-Modal Learning for Anomaly Detection in Complex Industrial Process: Methodology and Benchmark". IEEE Transactions on Circuits and Systems for Video Technology, 2024, 1-1</span></p>
+      <p>&nbsp;</p>
+      <p><span style="color:#000000;font-family:&#39;Courier New&#39;;font-size:15px;">@article{wu2024crossmodal, <br>
+			title={Cross-Modal Learning for Anomaly Detection in Complex Industrial Process: Methodology and Benchmark},<br>
+			author={Gaochang Wu and Yapeng Zhang and Lan Deng and Jingxin Zhang and Tianyou Chai},<br>
+			year={2024},<br>
+			journal={IEEE Transactions on Circuits and Systems for Video Technology},<br>
+			DOI={10.1109/TCSVT.2024.3491865},<br>
+			pages={1-1},<br>
+		}</span></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="row"> </div>
+  </div>
+  <div class="jumbotron"> </div>
+</section>	
+</div>
+
+</body></html>
