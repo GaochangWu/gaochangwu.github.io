@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DA2N's Project Page</title>
+<title>FmFormer's Project Page</title>
 <!-- Bootstrap -->
 <link href="./css/bootstrap-4.0.0.css" rel="stylesheet">
 </head>
@@ -15,11 +15,11 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h5 class="text-left"><a href="https://gaochangwu.github.io/">Back to my homepage</a></h5> <h5 class="text-center">Accepted by IEEE TPAMI 2021</h5>
-          <h2 class="text-center">Revisiting Light Field Rendering with Deep Anti-Aliasing Neural Network</h1>
+          <h5 class="text-left"><a href="https://gaochangwu.github.io/">Back to my homepage</a></h5> <h5 class="text-center">Accepted by IEEE TCSVT 2024</h5>
+          <h2 class="text-center">Cross-Modal Learning for Anomaly Detection in Complex Industrial Process: Methodology and Benchmark</h1>
           <p class="text-center">&nbsp;</p>
-          <h6 class="text-center"><a href="https://gaochangwu.github.io/">Gaochang Wu</a><sup>1</sup>, <a href="http://www.liuyebin.com/">Yebin Liu</a><sup>2</sup>, <a href="http://luvision.net/">Lu Fang</a><sup>2</sup>, Tianyou Chai</a><sup>1</sup></h6>
-          <p class="text-center">1. Northeastern University, 2. Tsinghua University</p>
+          <h6 class="text-center"><a href="https://gaochangwu.github.io/">Gaochang Wu</a><sup>1</sup>, Yapeng Zhang</a><sup>1</sup>, Lan Deng</a><sup>1</sup>, Jingxin Zhang</a><sup>2</sup>, Tianyou Chai</a><sup>1</sup></h6>
+          <p class="text-center">1. Northeastern University, 2. Swinburne University of Technology</p>
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
   <div class="container ">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 text-center  offset-xl-0 col-xl-12">
-        <p class="text-left"><em>The light field (LF) reconstruction is mainly confronted with two challenges, large disparity and non-Lambertian effect. Typical approaches either address the large disparity challenge using depth estimation followed by view synthesis or eschew explicit depth information to enable non-Lambertian rendering, but rarely solve both challenges in a unified framework. In this paper, we revisit the classic LF rendering framework to address both challenges by incorporating it with advanced deep learning techniques. First, we analytically show that the essential issue behind the large disparity and non-Lambertian challenges is the aliasing problem. Classic LF rendering approaches typically mitigate the aliasing with a reconstruction filter in the Fourier domain, which is, however, intractable to implement within a deep learning pipeline. Instead, we introduce an alternative framework to perform anti-aliasing reconstruction in the image domain and prove in theory the comparable and even superior efficacy on the aliasing issue. To explore the full potential, we then embed the anti-aliasing framework into a deep neural network through the design of an integrated architecture and trainable parameters. The network is trained through end-to-end optimization using a peculiar training set, including regular LFs and unstructured LFs. The proposed deep learning pipeline shows a substantial superiority on solving both the large disparity and the non-Lambertian challenges compared with other state-of-the-art approaches. In addition to the view interpolation for a LF, we also show that the proposed pipeline also benefits light field view extrapolation.
+        <p class="text-left"><em>Anomaly detection in complex industrial processes plays a pivotal role in ensuring efficient, stable, and secure operation. Existing anomaly detection methods primarily focus on analyzing dominant anomalies using the process variables (such as arc current) or constructing neural networks based on abnormal visual features, while overlooking the intrinsic correlation of cross-modal information. This paper proposes a cross-modal Transformer (dubbed FmFormer), designed to facilitate anomaly detection by exploring the correlation between visual features (video) and process variables (current) in the context of the fused magnesium smelting process. Our approach introduces a novel tokenization paradigm to effectively bridge the substantial dimensionality gap between the 3D video modality and the 1D current modality in a multiscale manner, enabling a hierarchical reconstruction of pixel-level anomaly detection. Subsequently, the FmFormer leverages self-attention to learn internal features within each modality and bidirectional cross-attention to capture correlations across modalities. By decoding the bidirectional correlation features, we obtain the final detection result and even locate the specific anomaly region. To validate the effectiveness of the proposed method, we also present a pioneering cross-modal benchmark of the fused magnesium smelting process, featuring synchronously acquired video and current data for over 2.2 million samples. Leveraging cross-modal learning, the proposed FmFormer achieves state-of-the-art performance in detecting anomalies, particularly under extreme interferences such as current fluctuations and visual occlusion caused by heavy water mist. The presented methodology and benchmark may be applicable to other industrial applications with some amendments. The benchmark will be released at \url{https://github.com/GaochangWu/FMF-Benchmark}.
 </em></p>
     <h5 class="text-center"><a href="https://www.bilibili.com/video/BV1sV411H7hF/">[Interpolation Video]</a> <a href="https://www.bilibili.com/video/BV1aK4y1K7Wg/">[Extrapolation Video]</a> <a href="https://github.com/GaochangWu/DA2N">[Code]</a></h5>
         <img src="assets/teaser.png" width="500" alt="">
