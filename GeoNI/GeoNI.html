@@ -1,111 +1,164 @@
 <!DOCTYPE html>
-<html lang="en"><head id="lhjicfnbdifhjojdccncinofklkjlpoa"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projectpage of Geo-NI</title>
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font-awesome.min.css"> 
+  <style id="MTQwMDAwMDE5OTk5OTky"></style><script type="text/javascript" charset="utf-8" defer="" async="" src="chrome-extension://acpjhbjgjlpeanfemfbbkabadjolngdk/inject-scripts/patch-xhr.js" data-params="{}"></script></head>
 
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Geo-NI's Project Page</title>
-<!-- Bootstrap -->
-<link href="./css/bootstrap-4.0.0.css" rel="stylesheet">
-<style id="NzQwMDAwMDE5OTk5OTYy"></style><script type="text/javascript" charset="utf-8" defer="" async="" src="chrome-extension://acpjhbjgjlpeanfemfbbkabadjolngdk/inject-scripts/patch-xhr.js" data-params="{}"></script></head>
-<body>
-<div id="page_container">
-<header>
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h5 class="text-left"><a href="https://gaochangwu.github.io/">Back to my homepage</a></h5> <h5 class="text-center">IEEE TPAMI 2025</h5>
-          <h2 class="text-center">Geo-NI: Geometry-aware Neural Interpolation for Light Field Rendering</h2>
-          <p class="text-center">&nbsp;</p>
-          <h6 class="text-center"><a href="https://gaochangwu.github.io/">Gaochang Wu</a><sup>1</sup>, Yuemei Zhou<sup>2</sup>, Lu Fang<sup>2</sup>, Yebin Liu<sup>2</sup>, Tianyou Chai<sup>1</sup></h6>
-          <p class="text-center">1. Northeastern University, 2. Tsinghua University</p>
+  <!-- cover -->
+  <body><section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Geo-NI: Geometry-aware Neural Interpolation for Light Field Rendering</h2>
+            <h4 style="color:#5a6268;">T-PAMI 2025</h4>
+            <hr>
+            <h6> <a href="https://gaochangwu.github.io/" target="_blank">Gaochang Wu<sup>1</sup></a>, 
+                <a target="_blank">Yuemei Zhou<sup>2†</sup></a>,
+                <a href="https://www.luvision.net/" target="_blank">Lu Fang<sup>2</sup></a>,
+                <a href="https://liuyebin.com/" target="_blank">Yebin Liu<sup>2</sup></a>,
+                <a href="http://www.sapi.neu.edu.cn/" target="_blank">Tianyou Chai<sup>1✉</sup></a></h6>
+            <p><sup>1</sup>Northeastern University<sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</sup>Tsinghua University
+            <br><sup>†</sup>Work done at Tsinghua University&nbsp;&nbsp;<sup>✉</sup>Corresponding author
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2206.09736" role="button" target="_blank">
+                  <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/GaochangWu/GeoNI/" role="button" target="_blank">
+                  <i class="fa fa-github"></i> Code</a></p>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
-<section>
-  <div class="container">
-    <p>&nbsp;</p>
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
-        <h2>Abstract</h2>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+
+          <p class="text-left"> We present a novel Geometry-aware Neural Interpolation (Geo-NI) framework for light field rendering. Previous learning-based approaches either perform direct interpolation via neural networks, which we dubbed Neural Interpolation (NI), or explore scene geometry for novel view synthesis, also known as Depth Image-Based Rendering (DIBR). Both kinds of approaches have their own strengths and weaknesses in addressing non-Lambert effect and large disparity problems. In this paper, we incorporate the ideas behind these two kinds of approaches by launching the NI within a specific DIBR pipeline. Specifically, a DIBR network in the proposed Geo-NI serves to construct a novel reconstruction cost volume for neural interpolated light fields sheared by different depth hypotheses. The reconstruction cost can be interpreted as an indicator reflecting the reconstruction quality under a certain depth hypothesis, and is further applied to guide the rendering of the final high angular resolution light field. To implement the Geo-NI framework more practically, we further propose an efficient modeling strategy to encode high-dimensional cost volumes using a lower-dimension network. By combining the superiorities of NI and DIBR, the proposed Geo-NI is able to render views with large disparities with the help of scene geometry while also reconstructing the non-Lambertian effect when depth is prone to be ambiguous. Extensive experiments on various datasets demonstrate the superior performance of the proposed geometry-aware light field rendering framework. 
+            </p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container ">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 text-center  offset-xl-0 col-xl-12">
-        <p class="text-left"><em>We present a novel Geometry-aware Neural Interpolation (Geo-NI) framework for light field rendering. Previous learning-based approaches either perform direct interpolation via neural networks, which we dubbed Neural Interpolation (NI), or explore scene geometry for novel view synthesis, also known as Depth Image-Based Rendering (DIBR). Both kinds of approaches have their own strengths and weaknesses in addressing non-Lambert effect and large disparity problems. In this paper, we incorporate the ideas behind these two kinds of approaches by launching the NI within a specific DIBR pipeline. Specifically, a DIBR network in the proposed Geo-NI serves to construct a novel reconstruction cost volume for neural interpolated light fields sheared by different depth hypotheses. The reconstruction cost can be interpreted as an indicator reflecting the reconstruction quality under a certain depth hypothesis, and is further applied to guide the rendering of the final high angular resolution light field. To implement the Geo-NI framework more practically, we further propose an efficient modeling strategy to encode high-dimensional cost volumes using a lower-dimension network. By combining the superiorities of NI and DIBR, the proposed Geo-NI is able to render views with large disparities with the help of scene geometry while also reconstructing the non-Lambertian effect when depth is prone to be ambiguous. Extensive experiments on various datasets demonstrate the superior performance of the proposed geometry-aware light field rendering framework.
- </em></p>
-        <p class="text-left">&nbsp;</p>
-        <p class="text-left">&nbsp;</p>
-		<h5 class="text-center"><a href="https://github.com/GaochangWu/GeoNI/">[Code (coming soon)]</a></h5>
-        <img src="./images/teaser.png" width="500" alt="">
-        <p>Fig 1.&nbsp;We present Geo-NI framework for geometry-aware light field rendering by launching the Neural Interpolation (NI) within a novel Depth Image-Based Rendering (DIBR) pipeline. The proposed framework is able to render LFs with large disparity while also reconstruct the non-Lambertian effects. Due to the awareness of the scene geometry, the proposed framework is able to render multi-plane image (a layered scene representation) and scene depth. LF courtesy of Adhikarla et al.</p>
-        <p>&nbsp;</p>
-	    <img src="./images/CNN.png" width="1055" alt="">
-        <p>Fig 2.&nbsp;The proposed Geo-NI framework is composed of two parts: (a) a Neural Interpolation (NI) part that directly reconstructs the sheared LF; and (b) a Depth Image-Based Rendering (DIBR) part that assigns a reconstruction cost map to each reconstructed LF.</p>
-        <p>&nbsp;</p>
-	<p>&nbsp;</p>
-	    <img src="./images/MPI.png" width="1055" alt="">
-        <p>Fig 3.&nbsp;The reconstruction cost produced by the proposed Geo-NI framework can be interpreted as alpha in the MPI representation. (a) We can promote the rendered 3D LF to MPIs for both input views and reconstructed views. We can also convert the reconstruction cost volume to (b) the EPI-MPI representation or (c) the vanilla version of MPI representation, simply by slicing along different dimensions.</p>
-        <p>&nbsp;</p>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>Method</h3>
+              <hr style="margin-top:0px">
+            <img src="./images/teaser.png" width="50%" alt="">
+            <p></p>
+            <p>
+              <strong>Overview</strong>: We present Geo-NI framework for geometry-aware light field rendering by launching the Neural Interpolation (NI) within a novel Depth Image-Based Rendering (DIBR) pipeline. The proposed framework is able to render LFs with large disparity while also reconstruct the non-Lambertian effects. Due to the awareness of the scene geometry, the proposed framework is able to render multi-plane image (a layered scene representation) and scene depth.
+            </p>
+            <p>&nbsp;</p>
+			<img src="./images/CNN.png" width="100%" alt="">
+            <p></p>
+            <p>
+              <strong>Network</strong>: The proposed Geo-NI framework is composed of two parts: (a) a Neural Interpolation (NI) part that directly reconstructs the sheared LF; and (b) a Depth Image-Based Rendering (DIBR) part that assigns a reconstruction cost map to each reconstructed LF.
+            </p>
+            <p>&nbsp;</p>
+			<img src="./images/MPI.png" width="100%" alt="">
+            <p></p>
+            <p>
+              <strong>MPI representation</strong>: The reconstruction cost produced by the proposed Geo-NI framework can be interpreted as alpha in the MPI representation. (a) We can promote the rendered 3D LF to MPIs for both input views and reconstructed views. We can also convert the reconstruction cost volume to (b) the EPI-MPI representation or (c) the vanilla version of MPI representation, simply by slicing along different dimensions.
+            </p>
+            <p>&nbsp;</p>
+          </div>
       </div>
     </div>
-    <hr>
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
-        <h2>Results </h2>
-        <p>&nbsp;</p>
+  </section>
+  <br>
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Demo Video (with audio)</h3>
+            <hr style="margin-top:0px">
+          <h6 style="color:#8899a5"> Demo video for method, comparisons, further applications</h6>
+            <video width="100%" playsinline="" loop="loop" preload="" controls>
+              <source src="./videos/video (with audio).mp4" type="video/mp4">
+            </video>
+            <p>&nbsp;</p>
+              <!-- <br><br> -->
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 text-center offset-xl-0 col-xl-10">
-	<img src="./images/Result1.png" width="1055" alt="">
-        <p>Fig 4.&nbsp;Comparison of the results (reconstructed EPIs) on LFs from the MPI Light Field Archive (reconstruction scales 16x and 36x). The second column shows the ground truth EPI and the input EPI for 36x reconstruction.</p>
-        <p>&nbsp;</p>
-	<img src="./images/Result2.png" width="1055" alt="">
-        <p>Fig 5.&nbsp;Comparison of the results on LFs from the CIVIT Dataset (reconstruction scales 16x and 36x). The second column shows the ground truth EPI and the input EPI for 36x reconstruction.</p>
-        <p>&nbsp;</p>
-	<img src="./images/Result3.png" width="1055" alt="">
-        <p>Fig 6.&nbsp;Comparison of the results on LFs from Lytro Illum. The results show the reconstructed views, zoom-in regions and the EPIs at the location marked by red lines.</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+            <h3>Qualitative Comparisons</h3>
+              <hr style="margin-top:0px">
+            <img src="./images/Result1.png" width="100%" alt="">
+            <p></p>
+            <p>
+              <strong>MPILF</strong>: Comparison of the results (reconstructed EPIs) on LFs from the MPI Light Field Archive (reconstruction scales 16x and 36x). The second column shows the ground truth EPI and the input EPI for 36x reconstruction.
+            </p>
+            <p>&nbsp;</p>
+			<img src="./images/Result2.png" width="100%" alt="">
+            <p></p>
+            <p>
+              <strong>CIVIT</strong>: Comparison of the results on LFs from the CIVIT Dataset (reconstruction scales 16x and 36x). The second column shows the ground truth EPI and the input EPI for 36x reconstruction.
+            </p>
+            <p>&nbsp;</p>
+			<img src="./images/Result3.png" width="100%" alt="">
+            <p></p>
+            <p>
+              <strong>Lytro</strong>: Comparison of the results on LFs from Lytro Illum. The results show the reconstructed views, zoom-in regions and the EPIs at the location marked by red lines.
+            </p>
+            <p>&nbsp;</p>
+          </div>
       </div>
     </div>
-    <hr>
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
-        <h2>Technical Paper</h2>
+  </section>
+  <br>
+
+    <!-- citing -->
+    <div class="container">
+      <div class="row ">
+        <div class="col-12">
+            <h3>Citation</h3>
+            <hr style="margin-top:0px">
+                <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">  <code>@article{wu2025geoni,
+    title={Geo-NI: Geometry-aware Neural Interpolation for Light Field Rendering},
+    author={Gaochang Wu and Yuemei Zhou and Lu Fang and Yebin Liu and Tianyou Chai},
+    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    pages={1-1},
+    year={2025}
+  }</code></pre>
+            <hr>
+        </div>
       </div>
-    <div id="extwaiokist" style="display:none" v="imcbc" q="ce9c982f" c="1455." i="1463" u="0.041" s="11212420" sg="svr_11212419-ga_11212420-bai_11252408" d="1" w="false" e="" a="2" m="BMe=" vn="3gest"><div id="extwaigglbit" style="display:none" v="imcbc" q="ce9c982f" c="1455." i="1463" u="0.041" s="11212420" sg="svr_11212419-ga_11212420-bai_11252408" d="1" w="false" e="" a="2" m="BMe="></div></div></div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center"> <a href="https://arxiv.org/abs/2206.09736"><img src="./images/paper.png" width="700" alt=""></a>
-      <p>&nbsp;</p>
     </div>
-    <hr>
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-center">
-        <h2>Citation</h2>
-      </div>
-    </div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 text-left">
-      <p><span style="color:#000000;font-family:&#39;Courier New&#39;;font-size:15px;"> Gaochang Wu, Yuemei Zhou, Lu Fang, Yebin Liu, Tianyou Chai. "Geo-NI: Geometry-aware Neural Interpolation for Light Field Rendering". IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025, 1-1</span></p>
-      <p>&nbsp;</p>
-      <p><span style="color:#000000;font-family:&#39;Courier New&#39;;font-size:15px;">@article{wu2024crossmodal, <br>
-			title={Geo-NI: Geometry-aware Neural Interpolation for Light Field Rendering},<br>
-			author={Gaochang Wu and Yuemei Zhou and Lu Fang and Yebin Liu and Tianyou Chai},<br>
-			year={2025},<br>
-			pages={1-1},<br>
-			journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},<br>
-		}</span></p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-    </div>
-    <div class="row"> </div>
-  </div>
-  <div class="jumbotron"> </div>
-</section>	
-</div>
+  
+  <footer class="text-center" style="margin-bottom:10px">
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the website template.
+  </footer>
+
+
 
 </body></html>
